@@ -1,0 +1,14 @@
+<section class="grid grid-cols-1 xl:grid-cols-4 gap-4">
+  <!-- Suggestion Component-->
+  <app-follow-suggestion class="xl:col-span-1"></app-follow-suggestion>
+
+  <div class="h-fit xl:col-span-3">
+    <!-- Create Post  -->
+    <app-create-post (postCreated)="showPost($event)"></app-create-post>
+
+    <!-- Get Posts Component Loop on post card Component -->
+    <div class="mt-4 flex flex-col gap-y-3">
+      <app-posts-cards [post]="postStatus"></app-posts-cards>
+    </div>
+  </div>
+</section>

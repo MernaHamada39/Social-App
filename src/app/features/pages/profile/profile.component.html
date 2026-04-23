@@ -1,0 +1,10 @@
+@if (isLoading()) {
+  <app-loader></app-loader>
+}
+
+<!-- Header -->
+<app-profile-header [accoutUser]="profileDetails" [isFollowing]="isFollowing"></app-profile-header>
+<!-- Posts -->
+<section class="space-y-4">
+  <app-profile-posts></app-profile-posts>
+</section>
